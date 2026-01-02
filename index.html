@@ -30,7 +30,7 @@
             margin-bottom: 20px;
         }
 
-        /* Image Container */
+        /* Image Container (main large image) */
         .image-container {
             position: relative;
             max-width: 860px;
@@ -83,6 +83,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
             min-width: 250px;
+            text-align: center;
         }
         
         .location-card h3 {
@@ -93,7 +94,14 @@
         }
 
         .location-card p {
-            margin: 0;
+            margin: 0 0 10px 0; /* Added margin to separate address lines and hours */
+        }
+
+        /* Hours Specific Styling */
+        .hours {
+            font-weight: bold;
+            color: #007BFF;
+            margin-bottom: 15px;
         }
 
         .location-link {
@@ -109,21 +117,31 @@
 
         /* Added specific highlight for the Tucson location as requested */
         .tucson-highlight {
-            background-color: #e6f2ff; /* Light blue background for emphasis */
+            background-color: #e6f2ff;
             border: 1px solid #007BFF;
+        }
+
+        /* Styling for the small images above location cards */
+        .location-image {
+            width: 100%; /* Makes the image fit inside the location card */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px; /* Space between image and text */
+            object-fit: cover;
+            max-height: 150px; /* Optional: cap the height of these images */
         }
 
     </style>
 </head>
 <body>
-    <!-- The user provided snippet structure is replaced by this content -->
+
     <div class="container">
         <h1>Vape Etc</h1>
 
-        <!-- Image Section -->
+        <!-- Main Storefront Image Section -->
         <div class="image-container">
-            <!-- REPLACE 'path/to/your/store-image.jpg' with your actual image file path or URL -->
-            <img src="path/to/your/store-image.jpg" alt="Vape Etc Storefront" class="large-image">
+            <!-- REPLACE 'path/to/your/main-store-image.jpg' with your actual main storefront image path or URL -->
+            <img src="path/to/your/main-store-image.jpg" alt="Vape Etc Storefront" class="large-image">
 
             <!-- REPLACE 'path/to/your/logo.png' with your actual logo file path or URL -->
             <img src="path/to/your/logo.png" alt="Vape Etc Logo" class="logo-image">
@@ -139,22 +157,34 @@
         <h2>Our Locations</h2>
         <div class="locations-container">
             
-            <!-- Tucson Location (Highlighted as requested) -->
+            <!-- Tucson Location Card (Highlighted) -->
             <div class="location-card tucson-highlight">
+                
+                <!-- PLACE YOUR TUCSON STORE IMAGE HERE -->
+                <!-- Replace 'path/to/your/tucson-store-image.jpg' with your actual Tucson image file path or URL -->
+                <img src="path/to/your/tucson-store-image.jpg" alt="Tucson Store Picture" class="location-image">
+
                 <h3>Tucson Location</h3>
                 <p>2410 S 6th Ave</p>
                 <p>Tucson, AZ 85713</p>
-                <!-- Link to open address in maps -->
-                <a href="maps.google.com" target="_blank" class="location-link">Get Directions</a>
+                <p class="hours">Open 24 hours</p>
+                <!-- Linked to Google Maps for directions -->
+                <a href="maps.google.com" target="_blank" class="location-link">Get Directions to Tucson Store</a>
             </div>
 
-            <!-- Green Valley Location -->
+            <!-- Green Valley Location Card -->
             <div class="location-card">
+
+                <!-- PLACE YOUR GREEN VALLEY STORE IMAGE HERE -->
+                <!-- Replace 'path/to/your/green-valley-store-image.jpg' with your actual Green Valley image file path or URL -->
+                <img src="path/to/your/green-valley-store-image.jpg" alt="Green Valley Store Picture" class="location-image">
+
                 <h3>Green Valley Location</h3>
                 <p>175 S LaCanada Drv Suite 121</p>
                 <p>Green Valley, AZ 85614</p>
-                <!-- Link to open address in maps -->
-                 <a href="maps.google.com" target="_blank" class="location-link">Get Directions</a>
+                <p class="hours">8am-5pm All week</p>
+                <!-- Linked to Google Maps for directions -->
+                 <a href="maps.google.com" target="_blank" class="location-link">Get Directions to Green Valley Store</a>
             </div>
 
         </div>
