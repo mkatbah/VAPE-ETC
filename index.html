@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My One Page Site</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vape Etc - Smoke Shop Locations</title>
+    <style>
+        /* Basic reset and styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Image Container */
+        .image-container {
+            position: relative;
+            max-width: 860px;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .large-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .logo-image {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 3px solid white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        }
+
+        /* Description Styling */
+        .description-box {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Locations Styling */
+        .locations-container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .location-card {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            min-width: 250px;
+        }
+        
+        .location-card h3 {
+            margin-top: 0;
+            color: #555;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+        }
+
+        .location-card p {
+            margin: 0;
+        }
+
+        .location-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .location-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Added specific highlight for the Tucson location as requested */
+        .tucson-highlight {
+            background-color: #e6f2ff; /* Light blue background for emphasis */
+            border: 1px solid #007BFF;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is my one-page site hosted on GitHub Pages.</p>
+    <!-- The user provided snippet structure is replaced by this content -->
+    <div class="container">
+        <h1>Vape Etc</h1>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <!-- REPLACE 'path/to/your/store-image.jpg' with your actual image file path or URL -->
+            <img src="path/to/your/store-image.jpg" alt="Vape Etc Storefront" class="large-image">
+
+            <!-- REPLACE 'path/to/your/logo.png' with your actual logo file path or URL -->
+            <img src="path/to/your/logo.png" alt="Vape Etc Logo" class="logo-image">
+        </div>
+
+        <!-- Description Section -->
+        <div class="description-box">
+            <h2>About Us</h2>
+            <p>Welcome to Vape Etc, your premier local smoke shop in Southern Arizona. We offer a wide selection of vaping products, accessories, and smoking essentials. Visit one of our two convenient locations today!</p>
+        </div>
+
+        <!-- Locations Section -->
+        <h2>Our Locations</h2>
+        <div class="locations-container">
+            
+            <!-- Tucson Location (Highlighted as requested) -->
+            <div class="location-card tucson-highlight">
+                <h3>Tucson Location</h3>
+                <p>2410 S 6th Ave</p>
+                <p>Tucson, AZ 85713</p>
+                <!-- Link to open address in maps -->
+                <a href="maps.google.com" target="_blank" class="location-link">Get Directions</a>
+            </div>
+
+            <!-- Green Valley Location -->
+            <div class="location-card">
+                <h3>Green Valley Location</h3>
+                <p>175 S LaCanada Drv Suite 121</p>
+                <p>Green Valley, AZ 85614</p>
+                <!-- Link to open address in maps -->
+                 <a href="maps.google.com" target="_blank" class="location-link">Get Directions</a>
+            </div>
+
+        </div>
+    </div>
+
 </body>
 </html>
