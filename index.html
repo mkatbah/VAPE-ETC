@@ -121,14 +121,15 @@
             border: 1px solid #007BFF;
         }
 
-        /* Styling for the small images above location cards */
+        /* Styling for the small images above location cards (Wider/Larger Edits) */
         .location-image {
-            width: 100%; /* Makes the image fit inside the location card */
-            height: auto;
+            width: 100%; /* Ensures image uses full width of the card's inner space */
+            height: auto; /* Maintains natural aspect ratio (no stretching/cropping) */
             border-radius: 8px;
-            margin-bottom: 15px; /* Space between image and text */
-            object-fit: cover;
-            max-height: 150px; /* Optional: cap the height of these images */
+            margin-bottom: 15px;
+            display: block;
+            /* Removed 'object-fit: cover' to prevent images from being cut off */
+            max-height: 250px; /* Increased the maximum height images can reach */
         }
 
     </style>
@@ -174,8 +175,8 @@
             <!-- Green Valley Location Card -->
             <div class="location-card">
 
-                <!-- REPLACE 'path/to/your/green-valley-store-image.jpg' with your actual Green Valley image file path or URL -->
-                <img src="path/to/your/green-valley-store-image.jpg" alt="Green Valley Store Picture" class="location-image">
+                <!-- GREEN VALLEY STORE IMAGE PATH ADDED HERE -->
+                <img src="images/greenvalleypic.jpg" alt="Green Valley Store Picture" class="location-image">
 
                 <h3>Green Valley Location</h3>
                 <p>175 S La Canada Dr Suite 121</p>
